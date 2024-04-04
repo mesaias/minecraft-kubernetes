@@ -1,0 +1,11 @@
+serverFiles:
+  prometheus.yml:
+    scrape_configs:
+      - job_name: 'kube-state-metrics'
+        kubernetes_sd_configs:
+          - role: endpoints
+            namespaces:
+              names:
+                - 'kube-system'
+        static_configs:
+          - targets: ['10.1.172.209:8080']
