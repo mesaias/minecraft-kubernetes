@@ -1,7 +1,7 @@
-*/.terraform
-*/tf.json
-*/tf.plan
-*/.terraform.lock.hcl
+*/terraform/.terraform
+*/terraform/tf.json
+*/terraform/tf.plan
+*/terraform/.terraform.lock.hcl
 */*/*.bkp
 */*/*.dtmp
 monitoring/grafana_values-real.yaml
