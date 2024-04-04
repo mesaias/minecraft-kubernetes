@@ -1,0 +1,24 @@
+---
+- name: Configure control plane
+  hosts: control_plane
+  become: true
+  tasks:
+    - name: Initialize Kubernetes control plane
+      command: kubeadm init --apiserver-advertise-address=10.1.228.5 --pod-network-cidr=10.1.224.0/19
+      when: inventory_hostname == "control_plane"
+
+    - name: Set up Kubernetes networking with Flannel
+      become_user: "{{ lookup('env', 'SUDO_USER') }}"
+      command: kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+      when: inventory_hostname == "control_plane"
+
+    - name: Save Kubernetes Configuration
+      copy:
+        src: /etc/kubernetes/admin.conf
+        dest: /home/debian/admin.conf
+        remote_src: yes
+      become: false
+
+    - name: Display Join Command
+      debug:
+        msg: "{{ kubeadm_output.stdout_lines | select('search', 'kubeadm join') | join(' ') }}"

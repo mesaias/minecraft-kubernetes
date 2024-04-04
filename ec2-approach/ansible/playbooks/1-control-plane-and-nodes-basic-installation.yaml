@@ -1,0 +1,41 @@
+---
+- name: Install kubernetes on control plane and nodes
+  hosts: control_plane, worker_nodes
+  become: true
+  tasks:
+    #- name: Install Docker
+    #  apt:
+    #    name: docker.io
+    #    state: present
+    #    update_cache: yes
+    #  become: yes
+    
+    - name: Install containerd
+      apt:
+        name: containerd
+        state: present
+        update_cache: yes
+      become: yes
+
+    - name: Add Kubernetes APT repository key
+      apt_key:
+        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+      when: ansible_os_family == "Debian"
+
+    - name: Add Kubernetes APT repository
+      apt_repository:
+        repo: deb http://apt.kubernetes.io/ kubernetes-xenial main
+        state: present
+      when: ansible_os_family == "Debian"
+
+    - name: Install kubeadm, kubelet, and kubectl
+      apt:
+        name: "{{ item }}"
+        state: present
+        update_cache: yes
+      become: yes
+      with_items:
+        - kubeadm
+        - kubelet
+        - kubectl
+      when: ansible_os_family == "Debian" 

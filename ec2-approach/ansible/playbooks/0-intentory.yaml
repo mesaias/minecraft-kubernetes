@@ -1,0 +1,23 @@
+all:
+  children:
+    control_plane:
+      hosts:
+        control_node_1:
+          ansible_host: 10.1.224.132
+          ansible_ssh_private_key_file: /keypairs/minecraft-server-control-plane.pem
+    worker_nodes:
+      hosts:
+        worker_node_1:
+          ansible_host: 10.1.224.196
+          ansible_ssh_private_key_file: /keypairs/minecraft-server-worker-nodes.pem
+        worker_node_2:
+          ansible_host: 10.1.224.197
+          ansible_ssh_private_key_file: /keypairs/minecraft-server-worker-nodes.pem
+        worker_node_3:
+          ansible_host: 10.1.224.198
+          ansible_ssh_private_key_file: /keypairs/minecraft-server-worker-nodes.pem
+    jenkins:
+      hosts:
+        jenkins_host:
+           ansible_host: 10.1.224.199
+           ansbile_ssh_private_key_file: /keypairs/minecraft-server-jenkins.pem

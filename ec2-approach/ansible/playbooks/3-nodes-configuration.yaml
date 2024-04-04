@@ -1,0 +1,19 @@
+---
+- name: Configure worker nodes
+  hosts: worker_nodes
+  become: true
+  tasks:
+    - name: Join worker nodes to Kubernetes cluster
+      command: "{{ hostvars['kubernetes_control_plane_node'].kube_join_command }}"
+      when: inventory_hostname in groups['worker_nodes']
+
+    - name: Retrieve Join Command
+      set_fact:
+        join_command: "{{ kubeadm_output.stdout_lines | select('search', 'kubeadm join') | join(' ') }}"
+      when: kubeadm_output.rc == 0
+
+    - name: Save Join Command
+      copy:
+        content: "{{ join_command }}"
+        dest: /home/debian/kubeadm_join_command.sh
+      become: false
