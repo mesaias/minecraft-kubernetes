@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "ec2:DescribeInstances",
+          "ec2:DescribeTags",
+          "ec2:DescribeRegions",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcs",
+          "s3:GetObject",
+          "s3:PutObject",
+          "iam:PassRole",
+          "elasticloadbalancing:*",
+          "autoscaling:*",
+          "route53:*"
+        ],
+        "Resource": "*"
+      }
+    ]
+  }
