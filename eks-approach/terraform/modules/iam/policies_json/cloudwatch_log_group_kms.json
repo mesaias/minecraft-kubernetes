@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+       "Id": "key-cloudwatch-group",
+       "Statement": [
+           {
+               "Sid": "Enable IAM User Permissions",
+               "Effect": "Allow",
+               "Principal": {
+                   "AWS": "arn:aws:iam::Your_account_ID:root"
+               },
+               "Action": "kms:*",
+               "Resource": "*"
+           },
+           {
+               "Effect": "Allow",
+               "Principal": {
+                   "Service": "logs.us-east-1.amazonaws.com"
+               },
+               "Action": [
+                   "kms:Encrypt*",
+                   "kms:Decrypt*",
+                   "kms:ReEncrypt*",
+                   "kms:GenerateDataKey*",
+                   "kms:Describe*"
+               ],
+               "Resource": "*",
+               "Condition": {
+                   "ArnEquals": {
+                       "kms:EncryptionContext:aws:logs:arn": "arn:aws:logs:us-east-1:account-id:log-group:cloudwatch-eks"
+                   }
+               }
+           }    
+       ]
+   }

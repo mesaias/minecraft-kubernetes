@@ -1,0 +1,15 @@
+variable "private_subnet_cidr" {}
+variable "eks_cluster_name" {}
+variable "instance_type_eks" {}
+variable "vpc_id" {}
+variable "private_subnet_ids" {}
+variable "common_tags" {}
+variable "map_users" {}
+variable "map_roles" {}
+variable "eks_asg_min_size" {}
+variable "eks_asg_desired_capacity" {}
+variable "eks_asg_max_size" {}
+variable "worker_groups" {}
+variable "account_id" {}
+variable "aws_region" {}
+variable "kms_eks_identifiers" {}

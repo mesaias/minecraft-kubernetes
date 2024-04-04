@@ -1,0 +1,10 @@
+variable vpc_cidr_block {}
+variable vpc_name {}
+variable "availability_zones" {}
+variable "public_subnet_cidr" {}
+variable "private_subnet_cidr" {}
+variable "common_tags" {}
+variable "eks_cluster_name" {}
+variable "vpc_flow_logging_role_arn" {}
+variable "application_name" {}
+variable "logs_retention" {}
