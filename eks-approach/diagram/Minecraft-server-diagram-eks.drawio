@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-04-04T06:49:09.019Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="ukMyjvrHrWV91K0Ew1JW" version="24.1.0" type="device" pages="2">
+<mxfile host="Electron" modified="2024-04-04T22:30:48.602Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="ALbCTM8DfjfB9bv3vCiJ" version="24.1.0" type="device" pages="2">
   <diagram id="7QVPp14nmS97_xrR1bs0" name="Cloud Diagram">
-    <mxGraphModel dx="2284" dy="1944" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1669" dy="1582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -272,12 +272,6 @@
         <mxCell id="vs19PkoDgLHeflbJ1ZBZ-1" value="Inspector" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#FFFFFF;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.inspector;" parent="1" vertex="1">
           <mxGeometry x="207.70999999999998" y="-918" width="52.16" height="52.16" as="geometry" />
         </mxCell>
-        <mxCell id="vs19PkoDgLHeflbJ1ZBZ-5" value="CloudWatch&lt;br&gt;Events" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.cloudwatch;fillColor=#759C3E;gradientColor=none;fontSize=12;" parent="1" vertex="1">
-          <mxGeometry x="-450.45" y="-837.5" width="61.66" height="69.5" as="geometry" />
-        </mxCell>
-        <mxCell id="vs19PkoDgLHeflbJ1ZBZ-6" value="EventBridge" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#ffffff;gradientColor=#FF4F8B;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.eventbridge;labelBackgroundColor=default;" parent="1" vertex="1">
-          <mxGeometry x="-364.24" y="-826.5" width="58.5" height="58.5" as="geometry" />
-        </mxCell>
         <mxCell id="vs19PkoDgLHeflbJ1ZBZ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.05;entryY=0.943;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;strokeColor=#5A30B5;fontSize=12;" parent="1" source="vs19PkoDgLHeflbJ1ZBZ-13" target="sm1eaxsdobdXQZJ7wqSA-66" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -344,6 +338,9 @@
         </mxCell>
         <mxCell id="P7eB0mEXNGzoX3BAMw1o-2" value="EC2&lt;br style=&quot;font-size: 8px;&quot;&gt;Worker&lt;br style=&quot;font-size: 8px;&quot;&gt;nodes" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;rounded=1;glass=0;sketch=0;strokeWidth=3;fontSize=8;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="250.4399999999999" y="-316.76" width="27.58" height="33.52" as="geometry" />
+        </mxCell>
+        <mxCell id="Yb4tsXTWWFZT6xbpZGT2-1" value="Cloudwatch Alarm" style="sketch=0;outlineConnect=0;fontColor=#ffffff;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.alarm;" vertex="1" parent="1">
+          <mxGeometry x="-425" y="-840" width="65" height="65" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
