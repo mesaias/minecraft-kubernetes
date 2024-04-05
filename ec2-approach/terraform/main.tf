@@ -25,6 +25,7 @@ module "compute" {
     private_subnet_ids            = module.network.private_subnet_ids
     sg_control_plane              = module.network.sg_control_plane
     sg_kubernetes_node_asg        = module.network.sg_kubernetes_node_asg
+    sg_jenkins                    = module.network.sg_jenkins
     kubernetes_node_role          = module.iam.kubernetes_node_role
     kubernetes_control_plane_role = module.iam.kubernetes_control_plane_role
     common_tags                   = local.common_tags

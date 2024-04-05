@@ -55,10 +55,38 @@ resource "aws_security_group" "kubernetes_node_sg" {
   }
 
   ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
     from_port   = 0  # Allow traffic from the control plane (Kubernetes API server)
     to_port     = 65535
     protocol    = "tcp"
     security_groups = [aws_security_group.kubernetes_control_plane_sg.id]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+resource "aws_security_group" "jenkins_sg" {
+  name        = "${var.application_name}-jenkins_sg-${terraform.workspace}"
+  description = "Security group for jenkins node"
+
+  vpc_id = data.aws_vpc.network.id
+
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {

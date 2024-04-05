@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minecraft-server
+  namespace: minecraft
+  annotations:
+    alb.ingress.kubernetes.io/ssl-policy: ELBSecurityPolicy-TLS-1-2-Ext-2018-06
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:AWSAccount:certificate/7b2787e3-c153-46cf-a804-be876b2edd56
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
+    alb.ingress.kubernetes.io/ssl-redirect: '443'
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/actions.ssl-redirect: >
+      {"type":"redirect","redirectConfig":{"port":"443","protocol":"HTTPS","statusCode":"HTTP_301"}}
+    alb.ingress.kubernetes.io/subnets: publicSubnetId1, publicSubnetId2
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/security-groups: alb-${var.application_name}
+    kubernetes.io/ingress.class: alb
+spec:
+  rules:
+     - host: minecraft-server-xylem.com
+       http:
+        paths:
+          - path: /minecraft-server
+            pathType: Prefix
+            backend:
+              service:
+                name: minecraft-server
+                port:
+                  number: 30565

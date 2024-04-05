@@ -17,3 +17,7 @@ output "sg_control_plane" {
 output "sg_kubernetes_node_asg" {
     value = aws_security_group.kubernetes_node_sg.id
 }
+
+output "sg_jenkins" {
+    value = aws_security_group.jenkins.id
+}
