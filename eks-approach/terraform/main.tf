@@ -8,7 +8,6 @@ module "network" {
     eks_cluster_name          = var.eks_cluster_name
     logs_retention            = var.logs_retention
     application_name          = var.application_name
-    vpc_flow_logging_role_arn = module.iam.vpc_flow_logging_role_arn
     common_tags               = local.common_tags
 }
 

@@ -127,25 +127,8 @@ module "eks" {
   })
 }
 
-resource "kubernetes_namespace" "applications" {
+resource "kubernetes_namespace" "minecraft" {
   metadata {
-    name = "applications"
-  }
-}
-
-resource "kubernetes_service" "nlb_minecraft" {
-  metadata {
-    name      = "nlb-minecraft-myspot"
-    namespace = kubernetes_namespace.applications.metadata.0.name
-  }
-  spec {
-    selector = {
-      app = "minecraft-myspot"
-    }
-    type = "LoadBalancer"
-    port {
-      port        = 80
-      target_port = 8080
-    }
+    name = "minecraft"
   }
 }

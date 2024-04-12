@@ -32,22 +32,6 @@ module "vpc" {
   })
 }
 
-resource "aws_flow_log" "minecraft_cluster_log" {
-  iam_role_arn    = var.vpc_flow_logging_role_arn
-  log_destination = aws_cloudwatch_log_group.minecraft_cluster_flow_log.arn
-  traffic_type    = "ALL"
-  vpc_id          = module.vpc.vpc_id
-}
-
-resource "aws_cloudwatch_log_group" "minecraft_cluster_flow_log" {
-  name = "minecraft_cluster_flow_log"
-
-  tags = merge (var.common_tags,
-  {
-    Name = var.vpc_name
-  })
-}
-
 resource "aws_default_security_group" "minecraft_cluster_flow_default_security_group" {
   vpc_id = module.vpc.vpc_id
 
