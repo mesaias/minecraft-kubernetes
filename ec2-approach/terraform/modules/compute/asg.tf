@@ -4,7 +4,7 @@ resource "aws_launch_configuration" "kubernetes_node_launch_conf" {
   instance_type               = "t2.micro"
   key_name                    = "${var.application_name}-worker-nodes"
   security_groups             = [var.sg_kubernetes_node_asg]
-  associate_public_ip_address = true
+  associate_public_ip_address = false
   iam_instance_profile        = var.kubernetes_node_role
 
   root_block_device {

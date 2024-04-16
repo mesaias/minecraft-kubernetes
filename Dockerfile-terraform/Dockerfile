@@ -16,5 +16,3 @@ RUN apk update && \
     rm -rf /var/tmp/*
 
 ENV PATH = $PATH:/usr/local/google-cloud-sdk/bin/
-
-ARG VCS_REF

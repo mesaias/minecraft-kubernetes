@@ -6,4 +6,3 @@ variable "availability_zones" {}
 variable "public_subnet_cidr" {}
 variable "private_subnet_cidr" {}
 variable "common_tags" {}
-variable "vpc_flow_logging_role_arn" {}

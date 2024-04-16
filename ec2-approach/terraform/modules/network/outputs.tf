@@ -19,5 +19,5 @@ output "sg_kubernetes_node_asg" {
 }
 
 output "sg_jenkins" {
-    value = aws_security_group.jenkins.id
+    value = aws_security_group.jenkins_sg.id
 }

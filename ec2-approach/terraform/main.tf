@@ -7,7 +7,6 @@ module "network" {
     private_subnet_cidr       = var.private_subnet_cidr
     logs_retention            = var.logs_retention
     application_name          = var.application_name
-    vpc_flow_logging_role_arn = module.iam.vpc_flow_logging_role_arn
     common_tags               = local.common_tags
 }
 
@@ -37,4 +36,9 @@ module "logging" {
     account_id       = local.account_id
     aws_region       = local.aws_region
     aws_partition    = local.aws_partition
+}
+
+module "ecr" {
+    source         = "./modules/ecr"
+    ecr_registries = var.ecr_minecraft_server_registries
 }

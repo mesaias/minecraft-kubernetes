@@ -3,11 +3,6 @@ resource "aws_iam_role" "replication_s3" {
   assume_role_policy = file("${path.module}/policies_json/replication_s3.json")
 }
 
-resource "aws_iam_role" "vpc_flow_logging_minecraft" {
-    name               = "${var.application_name}-${var.vpc_flow_logging_role_name}-${terraform.workspace}"
-    assume_role_policy = file("${path.module}/policies_json/vpc_flow_logging.json")
-}
-
 resource "aws_iam_role" "kubernetes_node_role" {
   name               = "kubernetes-node-role"
   assume_role_policy = file("${path.module}/policies_json/kubernetes_node_role_policy.json")

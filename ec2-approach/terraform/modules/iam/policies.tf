@@ -1,9 +1,3 @@
-resource "aws_iam_role_policy" "vpc_flow_logging_minecraft" {
-  name   = "${var.application_name}-vpc-flow-logging-${terraform.workspace}"
-  role   = aws_iam_role.vpc_flow_logging_minecraft.id
-  policy = file("${path.module}/policies_json/vpc_flow_logging.json")
-}
-
 resource "aws_iam_policy" "kubernetes_node_policy_minecraft" {
   name        = "${var.application_name}-kubernetes-node-policy-${terraform.workspace}"
   description = "IAM policy for Kubernetes cluster nodes"
