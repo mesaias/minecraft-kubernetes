@@ -7,3 +7,4 @@ helm upgrade prometheus prometheus-community/prometheus --namespace prometheus \
 
 
   helm upgrade grafana grafana/grafana --namespace grafana --set persistence.enabled=true,persistence.storageClassName="local-storage",persistence.existingClaim="grafana-pvc" --values grafana_values.yaml
+  helm upgrade grafana grafana/grafana --namespace grafana --values grafana_values-real.yaml

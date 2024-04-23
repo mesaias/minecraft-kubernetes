@@ -1,4 +1,4 @@
-resource "aws_kms_key" "cloudwatch_eks" {
+/*resource "aws_kms_key" "cloudwatch_eks" {
   description         = "This key is used to encrypt cloudwatch group"
   is_enabled          = true
   enable_key_rotation = true
@@ -55,16 +55,16 @@ data "aws_iam_policy_document" "kms_policy" {
 
     resources = ["*"]
   }
-}
+}*/
 
 module "kms" {
-  source  = "terraform-aws-modules/kms/aws"
-  version = "~> 1.5"
+  source  = "terraform-module/kms/aws"
+  version = "2.3.0"
 
-  aliases               = ["eks/${var.eks_cluster_name}-cluster-${terraform.workspace}"]
+  alias_name            = "eks/${var.eks_cluster_name}-cluster-${terraform.workspace}"
   description           = "${var.eks_cluster_name}-${terraform.workspace} cluster encryption key"
-  enable_default_policy = true
-  key_owners = var.kms_eks_identifiers
+  enable_key_rotation   = true
+  //key_owners            = var.kms_eks_identifiers
 
   tags = merge(var.common_tags,
     {

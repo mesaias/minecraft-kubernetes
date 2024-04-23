@@ -3,6 +3,7 @@ variable "eks_cluster_name" {}
 variable "instance_type_eks" {}
 variable "vpc_id" {}
 variable "private_subnet_ids" {}
+variable "public_subnet_ids" {}
 variable "common_tags" {}
 variable "map_users" {}
 variable "map_roles" {}
@@ -13,3 +14,4 @@ variable "worker_groups" {}
 variable "account_id" {}
 variable "aws_region" {}
 variable "kms_eks_identifiers" {}
+variable "eks_role_arn" {}

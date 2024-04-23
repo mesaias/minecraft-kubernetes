@@ -2,7 +2,7 @@ application_name="minecraft-server"
 
 vpc_cidr_block="10.1.224.0/24"
 vpc_name="minecraft-server-dev-vpc"
-availability_zones=["us-east-1a", "us-east-1b", "us-east-1c"]
+availability_zones=["us-east-1a", "us-east-1b"]
 public_subnet_cidr=["10.1.224.0/26", "10.1.224.64/26"]
 private_subnet_cidr=["10.1.224.128/26", "10.1.224.192/26"]
 vpc_flow_logging_role_name="tf-iam-role-vpc-flow-logging"

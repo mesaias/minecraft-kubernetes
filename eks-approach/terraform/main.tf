@@ -31,6 +31,8 @@ module "compute" {
     aws_region               = local.aws_region
     vpc_id                   = module.network.vpc_id
     private_subnet_ids       = module.network.private_subnet_ids
+    public_subnet_ids        = module.network.public_subnet_ids
+    eks_role_arn             = module.iam.eks_role_arn
     common_tags              = local.common_tags
     account_id               = local.account_id
     kms_eks_identifiers      = local.kms_eks_identifiers
@@ -42,10 +44,10 @@ module "ecr" {
     ecr_attach_lifecycle_policy = var.ecr_attach_lifecycle_policy
 }
 
-module "logging" {
+/*module "logging" {
     source           = "./modules/logging"
     application_name = var.application_name
     account_id       = local.account_id
     aws_region       = local.aws_region
     aws_partition    = local.aws_partition
-}
+}*/
