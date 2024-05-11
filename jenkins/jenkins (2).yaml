@@ -1,0 +1,365 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - aws:
+          accessKey: "AKIAZJJWLZIN5NL57GFA"
+          id: "personal"
+          scope: GLOBAL
+          secretKey: "{AQAAABAAAAAw0KV4S6GS2D7O2G1KJ5WBnVw7pgHt/IKCJSYM5C1eFb/1l+4pZtEUI6znxgS9TVVLI2B/7SRgz5L1Okk47dNM+Q==}"
+      - file:
+          fileName: "html.tpl"
+          id: "templateHTMLTrivy"
+          scope: GLOBAL
+          secretBytes: "{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}"
+jenkins:
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+  clouds:
+  - kubernetes:
+      containerCap: 10
+      containerCapStr: "10"
+      jenkinsTunnel: "jenkins-agent.devops-tools.svc.cluster.local:50000"
+      jenkinsUrl: "http://jenkins.devops-tools.svc.cluster.local:8080"
+      name: "kubernetes"
+      namespace: "devops-tools"
+      podLabels:
+      - key: "jenkins/jenkins-jenkins-agent"
+        value: "true"
+      serverUrl: "https://kubernetes.default"
+      templates:
+      - containers:
+        - args: "^${computer.jnlpmac} ^${computer.name}"
+          envVars:
+          - envVar:
+              key: "JENKINS_URL"
+              value: "http://jenkins.devops-tools.svc.cluster.local:8080/"
+          image: "jenkins/inbound-agent:3206.vb_15dcf73f6a_9-3"
+          name: "jnlp"
+          resourceLimitCpu: "512m"
+          resourceLimitMemory: "512Mi"
+          resourceRequestCpu: "512m"
+          resourceRequestMemory: "512Mi"
+          workingDir: "/home/jenkins/agent"
+        id: "14bc718b11f9a4cea39e9531ec6db3e728e1a56afb6cae41fdbcc4455bb0e611"
+        label: "jenkins-jenkins-agent"
+        name: "default"
+        namespace: "devops-tools"
+        nodeUsageMode: NORMAL
+        podRetention: "never"
+        serviceAccount: "default"
+        slaveConnectTimeout: 100
+        slaveConnectTimeoutStr: "100"
+        yamlMergeStrategy: "override"
+      - containers:
+        - alwaysPullImage: true
+          args: "cat"
+          command: "/bin/sh -c"
+          image: "mesaias/helm-kubectl:1.0"
+          livenessProbe:
+            failureThreshold: 0
+            initialDelaySeconds: 0
+            periodSeconds: 0
+            successThreshold: 0
+            timeoutSeconds: 0
+          name: "helm-kubectl"
+          ttyEnabled: true
+          workingDir: "/home/jenkins/agent"
+        - alwaysPullImage: true
+          args: "cat"
+          command: "/bin/sh -c"
+          image: "mesaias/terraform-alpine:1.0"
+          livenessProbe:
+            failureThreshold: 0
+            initialDelaySeconds: 0
+            periodSeconds: 0
+            successThreshold: 0
+            timeoutSeconds: 0
+          name: "terraform"
+          ttyEnabled: true
+          workingDir: "/home/jenkins/agent"
+        id: "8d18969a-2a08-4f43-90f3-0bebfaf49853"
+        label: "minecraft"
+        name: "minecraft"
+        namespace: "devops-tools"
+        nodeUsageMode: NORMAL
+        yamlMergeStrategy: "override"
+      - containers:
+        - alwaysPullImage: true
+          args: "cat"
+          command: "/bin/sh -c"
+          image: "mesaias/terraform-alpine:1.0"
+          livenessProbe:
+            failureThreshold: 0
+            initialDelaySeconds: 0
+            periodSeconds: 0
+            successThreshold: 0
+            timeoutSeconds: 0
+          name: "terraform-alpine"
+          ttyEnabled: true
+          workingDir: "/home/jenkins/agent"
+        id: "034a5b57-b411-44e4-ac75-0276738d3070"
+        label: "terraform"
+        name: "terraform"
+        namespace: "devops-tools"
+        yamlMergeStrategy: "override"
+      - containers:
+        - alwaysPullImage: true
+          args: "cat"
+          command: "/bin/sh -c"
+          image: "mesaias/trivy-java-db:v0.50.1"
+          livenessProbe:
+            failureThreshold: 0
+            initialDelaySeconds: 0
+            periodSeconds: 0
+            successThreshold: 0
+            timeoutSeconds: 0
+          name: "trivy"
+          ttyEnabled: true
+          workingDir: "/home/jenkins/agent"
+        - alwaysPullImage: true
+          args: "cat"
+          command: "/bin/sh -c"
+          image: "mesaias/helm-kubectl:1.0"
+          livenessProbe:
+            failureThreshold: 0
+            initialDelaySeconds: 0
+            periodSeconds: 0
+            successThreshold: 0
+            timeoutSeconds: 0
+          name: "helm-kubectl"
+          ttyEnabled: true
+          workingDir: "/home/jenkins/agent"
+        id: "ba6dc335-848c-4e15-a3b2-f12e94306cdb"
+        name: "update-deployment"
+        namespace: "devops-tools"
+        yamlMergeStrategy: "override"
+      - containers:
+        - alwaysPullImage: true
+          privileged: true
+          args: "cat"
+          command: "/bin/sh -c"
+          image: "docker:20.10.12"
+          livenessProbe:
+            failureThreshold: 0
+            initialDelaySeconds: 0
+            periodSeconds: 0
+            successThreshold: 0
+            timeoutSeconds: 0
+          name: "docker-in-docker"
+          ttyEnabled: true
+          workingDir: "/home/jenkins/agent"
+        - alwaysPullImage: true
+          args: "cat"
+          command: "/bin/sh -c"
+          image: "maven:3.9.6-eclipse-temurin-17-focal"
+          livenessProbe:
+            failureThreshold: 0
+            initialDelaySeconds: 0
+            periodSeconds: 0
+            successThreshold: 0
+            timeoutSeconds: 0
+          name: "maven"
+          ttyEnabled: true
+          workingDir: "/home/jenkins/agent"
+        id: "fa73f7d5-ae46-4012-96e4-3cb6e0565e83"
+        name: "spring"
+        volumes:
+        - hostPathVolume:
+            hostPath: "/var/run/docker.sock"
+            mountPath: "/var/run/docker.sock"
+        yamlMergeStrategy: "override"
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: true
+  disableRememberMe: false
+  labelAtoms:
+  - name: "built-in"
+  - name: "jenkins-jenkins-agent"
+  - name: "minecraft"
+  - name: "terraform"
+  markupFormatter: "plainText"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  nodeMonitors:
+  - "architecture"
+  - "clock"
+  - diskSpace:
+      freeSpaceThreshold: "1GiB"
+      freeSpaceWarningThreshold: "2GiB"
+  - "swapSpace"
+  - tmpSpace:
+      freeSpaceThreshold: "1GiB"
+      freeSpaceWarningThreshold: "2GiB"
+  - "responseTime"
+  numExecutors: 0
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "admin"
+        name: "Jenkins Admin"
+        properties:
+        - "apiToken"
+        - "consoleUrlProvider"
+        - "mailer"
+        - "myView"
+        - preferredProvider:
+            providerId: "default"
+        - "timezone"
+        - "experimentalFlags"
+        - "theme"
+  slaveAgentPort: 50000
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
+  views:
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+globalCredentialsConfiguration:
+  configuration:
+    providerFilter: "none"
+    typeFilter: "none"
+appearance:
+  prism:
+    theme: DARK
+  themeManager:
+    disableUserThemes: true
+    theme: "darkSystem"
+security:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  gitHooks:
+    allowedOnAgents: false
+    allowedOnController: false
+  gitHostKeyVerificationConfiguration:
+    sshHostKeyVerificationStrategy: "knownHostsFileVerificationStrategy"
+  sSHD:
+    port: -1
+unclassified:
+  ansiColorBuildWrapper:
+    colorMaps:
+    - black: "#000000"
+      blackB: "#4C4C4C"
+      blue: "#1E90FF"
+      blueB: "#4682B4"
+      cyan: "#00CDCD"
+      cyanB: "#00FFFF"
+      green: "#00CD00"
+      greenB: "#00FF00"
+      magenta: "#CD00CD"
+      magentaB: "#FF00FF"
+      name: "xterm"
+      red: "#CD0000"
+      redB: "#FF0000"
+      white: "#E5E5E5"
+      whiteB: "#FFFFFF"
+      yellow: "#CDCD00"
+      yellowB: "#FFFF00"
+    - black: "#000000"
+      blackB: "#555555"
+      blue: "#0000AA"
+      blueB: "#5555FF"
+      cyan: "#00AAAA"
+      cyanB: "#55FFFF"
+      defaultBackground: 0
+      defaultForeground: 7
+      green: "#00AA00"
+      greenB: "#55FF55"
+      magenta: "#AA00AA"
+      magentaB: "#FF55FF"
+      name: "vga"
+      red: "#AA0000"
+      redB: "#FF5555"
+      white: "#AAAAAA"
+      whiteB: "#FFFFFF"
+      yellow: "#AA5500"
+      yellowB: "#FFFF55"
+    - black: "black"
+      blackB: "black"
+      blue: "blue"
+      blueB: "blue"
+      cyan: "cyan"
+      cyanB: "cyan"
+      green: "green"
+      greenB: "green"
+      magenta: "magenta"
+      magentaB: "magenta"
+      name: "css"
+      red: "red"
+      redB: "red"
+      white: "white"
+      whiteB: "white"
+      yellow: "yellow"
+      yellowB: "yellow"
+    - black: "#2E3436"
+      blackB: "#2E3436"
+      blue: "#3465A4"
+      blueB: "#3465A4"
+      cyan: "#06989A"
+      cyanB: "#06989A"
+      defaultBackground: 0
+      defaultForeground: 7
+      green: "#4E9A06"
+      greenB: "#4E9A06"
+      magenta: "#75507B"
+      magentaB: "#75507B"
+      name: "gnome-terminal"
+      red: "#CC0000"
+      redB: "#CC0000"
+      white: "#D3D7CF"
+      whiteB: "#D3D7CF"
+      yellow: "#C4A000"
+      yellowB: "#C4A000"
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
+  junitTestResultStorage:
+    storage: "file"
+  location:
+    adminAddress: "address not configured yet <nobody@nowhere>"
+    url: "http://localhost:8080/"
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+    useTls: false
+  pipelineStepsAWS:
+    enableCredentialsFromNode: false
+  pollSCM:
+    pollingThreadCount: 10
+  scmGit:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: false
+    useExistingAccountWithSameEmail: false
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
